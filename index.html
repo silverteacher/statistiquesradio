@@ -14,7 +14,7 @@
 
         body {
             font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
             min-height: 100vh;
             color: #333;
             line-height: 1.6;
@@ -40,7 +40,7 @@
         .header h1 {
             font-size: 3em;
             margin-bottom: 10px;
-            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            background: linear-gradient(45deg, #e74c3c, #3498db);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -75,7 +75,7 @@
         .stat-number {
             font-size: 2.5em;
             font-weight: bold;
-            color: #667eea;
+            color: #2c3e50;
             margin-bottom: 10px;
         }
 
@@ -126,7 +126,7 @@
         }
 
         .insights h2 {
-            color: #667eea;
+            color: #2c3e50;
             margin-bottom: 20px;
             font-size: 1.8em;
         }
@@ -136,7 +136,7 @@
             padding: 15px;
             border-radius: 10px;
             margin-bottom: 15px;
-            border-left: 4px solid #667eea;
+            border-left: 4px solid #2c3e50;
         }
 
         @media (max-width: 768px) {
@@ -157,7 +157,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>📻 Radio vs 🎧 Podcasts</h1>
+            <h1>📻 Radios et podcasts, qui écoute quoi ?</h1>
             <p>Analyse comparative des audiences en France - 2024</p>
         </div>
 
@@ -181,6 +181,16 @@
                 <div class="stat-number">200M</div>
                 <div class="stat-label">Épisodes de podcasts/mois</div>
                 <div class="stat-desc">Croissance exponentielle</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">50 ans</div>
+                <div class="stat-label">Âge moyen auditeur radio</div>
+                <div class="stat-desc">vs 45 ans pour podcasts</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">9,7M</div>
+                <div class="stat-label">Écoute radio numérique</div>
+                <div class="stat-desc">17,2% de la population</div>
             </div>
         </div>
 
@@ -243,15 +253,15 @@
                 datasets: [{
                     label: 'Radio (%)',
                     data: [52, 65, 76, 76, 70],
-                    backgroundColor: 'rgba(102, 126, 234, 0.8)',
-                    borderColor: 'rgba(102, 126, 234, 1)',
+                    backgroundColor: 'rgba(44, 62, 80, 0.8)',
+                    borderColor: 'rgba(44, 62, 80, 1)',
                     borderWidth: 2,
                     borderRadius: 8
                 }, {
                     label: 'Podcasts natifs (%)',
                     data: [75, 82, 65, 45, 25],
-                    backgroundColor: 'rgba(255, 107, 107, 0.8)',
-                    borderColor: 'rgba(255, 107, 107, 1)',
+                    backgroundColor: 'rgba(52, 152, 219, 0.8)',
+                    borderColor: 'rgba(52, 152, 219, 1)',
                     borderWidth: 2,
                     borderRadius: 8
                 }]
@@ -290,14 +300,14 @@
                 datasets: [{
                     data: [41, 35, 24],
                     backgroundColor: [
-                        'rgba(102, 126, 234, 0.8)',
-                        'rgba(78, 205, 196, 0.8)',
-                        'rgba(255, 107, 107, 0.8)'
+                        'rgba(44, 62, 80, 0.8)',
+                        'rgba(52, 152, 219, 0.8)',
+                        'rgba(231, 76, 60, 0.8)'
                     ],
                     borderColor: [
-                        'rgba(102, 126, 234, 1)',
-                        'rgba(78, 205, 196, 1)',
-                        'rgba(255, 107, 107, 1)'
+                        'rgba(44, 62, 80, 1)',
+                        'rgba(52, 152, 219, 1)',
+                        'rgba(231, 76, 60, 1)'
                     ],
                     borderWidth: 3
                 }]
